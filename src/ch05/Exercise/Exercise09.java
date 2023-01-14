@@ -24,7 +24,8 @@ public class Exercise09 {
                     scores = new int[studentNum];
                     break;
                 case 2:
-                    System.out.println("Enter a score : ");
+                    System.out.print("Enter a score ");
+                    System.out.println(" ->  You have to enter "+studentNum+" students's score ");
                     for (int i=0; i< scores.length; i++){
                         System.out.print("score["+i+"] : ");
                         scores[i] = scanner.nextInt();
@@ -48,6 +49,9 @@ public class Exercise09 {
                     break;
                 case 5:
                     run = false;
+                    break;
+                default:
+                    System.out.println("Wrong number ! please put a number in 1-5");
             }
         }
     }
